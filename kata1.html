@@ -5,8 +5,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;1,8..144,200&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <title>Honeymoon</title>
 
 
         <style>
@@ -72,12 +73,11 @@
             .header{
                 display:flex;
                 height: 60px;
-                align-items:center;
-                justify-content:space-between;
+               
                 background-color:white;
                 color:#333333;
-                
-                
+                position : fixed;
+                top: 0;
                 
                 
                 
@@ -86,40 +86,73 @@
 
             }
             .logo{
-                width:140px;
-                height:60px;
+                width:50px;
+                border-radius:54px;
+                height:44px;
                 object-fit: cover;
                 
+
+            }
+        
+            .int{
+                color: white;
+                padding-left: 10px;
             }
             .int::placeholder{
                 font-family: 'josefin Sans';
-                font-size:20px;
+                font-size:14px;
                 font-weight: bold;
                 color: white;
                 padding-left:10px;
 
             }
-            .be:hover{
-                text-decoration: underline;
-            }
-           
 
+            .int::value{
+                color: white;
+            }
+            .int:focus{
+                outline:none;
+                
+                
+            }
+            a:hover{
+                box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+
+            }
+            #but:hover{
+                background-color: #333333;
+                color:white;
+            }
+            
         </style>  
             
         
     </head>
-    <body style="margin:0px; font-family:'josefin Sans'; height:100vh; width: 100vw;">
+    <body style="margin:0px; font-family:'josefin Sans'; height:100vh; width: 100vw; padding-top: 60px;padding-right:0px;">
         
         <div class="header">
-            <img class="logo" src="./logo.png">
+            <div style=" width:200px;  margin-right:20px; display:flex; align-items: center; margin-left: 30px;">
+                <img class="logo" src="./logo.png">
+            </div>
+            <div style="display:flex; align-items:center;  width:500px; margin-right: 50px;">
+                <input class="int"  style="height:40px;  border:none; background-color:#333333;flex:1; border-top-left-radius: 20px; border-bottom-left-radius: 20px;  " type="text" placeholder="Search" >
+                <button style="width:60px; background-color:#333333; border:none; height:42px; color:white; border-top-right-radius: 20px;border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
+                    <span class="material-symbols-outlined"> search</span>
+                </button>
+            </div>
             
-            <a  class="be" style=" color:#333333; text-decoration: none; font-weight:bold;" href="#"> HONEYMOON </a>
-            <a   style=" color:#333333; text-decoration: none; font-weight:bold;" href="#">WEDDINGS</a>
-            <a   style=" color:#333333; text-decoration: none; font-weight:bold;"  href="#">PROPOSALS</a>
-            <a style=" color:#333333; text-decoration: none; font-weight:bold;" href="#">HOTELS</a>
-            <a  style=" color:#333333; text-decoration: none; font-weight:bold;" href="#">TRAVELS<a>
+        <div class = "ass" style = "width: 500px; display:flex; justify-content:space-between; align-items:center;">
+            <a  class="a" style=" color:#333333; text-decoration:none; font-weight:bold;" href="#"> honeymoon </a>
+            <a  class="b" style=" color:#333333; text-decoration: none; font-weight:bold;" href="#">wedding</a>
+            <a  class="c" style=" color:#333333; text-decoration: none; font-weight:bold;"  href="#">proposals</a>
+            <a class="d" style=" color:#333333; text-decoration: none; font-weight:bold;" href="#">hotels</a>
+            <a  class="e" style=" color:#333333; text-decoration: none; font-weight:bold;" href="#">travels<a>
+                
+        </div>
+            
+           
             <i class="fa-light fa-magnifying-glass"></i>
-            <input class="int"  style="height:60px;  border:none; background-color:#333333;  type = "text" placeholder="search" >
+           
             
 
         </div>
@@ -244,7 +277,7 @@
                             The rooftop is an ideal place to relax and unwind, away from the hustle and bustle of the city below. The peaceful ambiance and stunning scenery make it the perfect place to escape and enjoy a moment of serenity.
                         </p>
                         <div style="display:flex; justify-content: center; margin-top: 40px; margin-bottom: 40px; ">
-                            <button class="ber" style="background-color:white;border-width: 1px; font-size:16px; font-family: 'Josefin Sans'; height:50px;width:170px; border-style:solid; border-color:black;"> DISCOVER</button>
+                            <button id="but" style="background-color:white;border-width: 1px; font-size:16px; font-family: 'Josefin Sans'; height:50px;width:170px; border-style:solid; border-color:black;"> DISCOVER</button>
 
                         </div>
 
